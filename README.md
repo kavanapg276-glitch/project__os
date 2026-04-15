@@ -88,5 +88,7 @@ Our runtime analyzes the **Linux Completely Fair Scheduler (CFS)** by allowing u
 The supervisor manages a safe IPC logging pipeline between containers and the user space, ensuring `stdout` and `stderr` are captured using pipes without dropping lines or encountering deadlocks.
 
 ## 👥 Credits
-- **Team Member 1**: [Your Name/SRN]
-- **Team Member 2**: [Teammate Name/SRN]
+- NAME :KAVANA P G
+- SRN:PES1UG24CS669
+- NAME:KRUTHIKA C B
+- SRN:PES1UG24CS670
