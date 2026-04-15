@@ -2,7 +2,7 @@
 
 A lightweight, C-based multi-container runtime that utilizes Linux namespaces for isolation, a supervisor process for lifecycle management via UNIX domain sockets, and a custom kernel module for memory monitoring.
 
-## 🚀 Features
+## Features
 
 Our runtime implements the following core features:
 
@@ -34,7 +34,7 @@ Load the custom memory monitor kernel module:
 sudo insmod monitor.ko
 ```
 
-## 📋 Usage Guide
+##  Usage Guide
 
 ### 1. Start the Supervisor
 The supervisor tracks all running containers and manages their logs.
@@ -81,7 +81,7 @@ sudo ./engine start mem-test ./rootfs-alpha /mem_workload --hard-mib 10
 ```
 Check `dmesg` to see the kernel module in action when a process is killed for exceeding limits.
 
-## 📐 Architecture
+##  Architecture
 
 Our runtime analyzes the **Linux Completely Fair Scheduler (CFS)** by allowing users to launch containers with specific process priorities (nice values). The logic relies on creating isolated payload processes (`cpu_workload`, `io_workload`, etc.) and delegating time-slice management to the host kernel's CFS.
 
