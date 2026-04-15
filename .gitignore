@@ -1,0 +1,31 @@
+# Binaries
+engine
+cpu_workload
+io_workload
+mem_workload
+
+# Kernel Module Build Artifacts
+*.ko
+*.o
+*.mod
+*.mod.c
+*.mod.o
+.*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+
+# Rootfs and Data (Too large for GitHub)
+rootfs/
+rootfs-alpha/
+rootfs-beta/
+rootfs-base/
+oldrootfs/
+alpine-minirootfs-*.tar.gz
+
+# Logs
+logs/
+
+# Misc
+.DS_Store
+OS-Jackfruit/
