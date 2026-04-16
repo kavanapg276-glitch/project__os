@@ -38,6 +38,8 @@ sudo insmod monitor.ko
 
 ### 1. Start the Supervisor
 The supervisor tracks all running containers and manages their logs.
+<img width="801" height="518" alt="WhatsApp Image 2026-04-16 at 2 28 43 PM" src="https://github.com/user-attachments/assets/f1d6e1db-0392-4f6a-adc0-4dd3d5517f5c" />
+
 <img width="1216" height="690" alt="WhatsApp Image 2026-04-15 at 7 50 48 PM" src="https://github.com/user-attachments/assets/aa4d91c5-9974-4b95-a01d-b1253cdf64bd" />
 
 ```bash
