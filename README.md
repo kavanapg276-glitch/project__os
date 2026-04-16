@@ -38,13 +38,17 @@ sudo insmod monitor.ko
 
 ### 1. Start the Supervisor
 The supervisor tracks all running containers and manages their logs.
+<img width="1216" height="690" alt="WhatsApp Image 2026-04-15 at 7 50 48 PM" src="https://github.com/user-attachments/assets/aa4d91c5-9974-4b95-a01d-b1253cdf64bd" />
+
 ```bash
 sudo ./engine supervisor ./rootfs-base
 ```
 
 ### 2. Start Containers
-You can start multiple containers in parallel:
+<img width="1216" height="690" alt="WhatsApp Image 2026-04-15 at 7 50 48 PM" src="https://github.com/user-attachments/assets/59a6d7ed-0079-49fe-88c1-6fc70f2e9fa0" />
+
 ```bash
+
 # Start a CPU-bound workload in container 'alpha'
 sudo ./engine start alpha ./rootfs-alpha /cpu_workload
 
@@ -53,18 +57,27 @@ sudo ./engine start beta ./rootfs-beta /io_workload
 ```
 
 ### 3. Track Containers
+
 List all active containers managed by the supervisor:
+<img width="1217" height="289" alt="WhatsApp Image 2026-04-15 at 7 51 37 PM" src="https://github.com/user-attachments/assets/ffa54eb2-923f-45e7-b98b-514f50fc51ad" />
+
 ```bash
 sudo ./engine ps
 ```
 
 ### 4. View Logs
+<img width="1216" height="690" alt="WhatsApp Image 2026-04-15 at 7 51 59 PM" src="https://github.com/user-attachments/assets/ade36aa8-445b-40bd-9c32-1ec3b6267f42" />
+
 Stream or view logs from a specific container:
 ```bash
 sudo ./engine logs alpha
 ```
 
 ### 5. Scheduling (Priority Management)
+<img width="1184" height="250" alt="WhatsApp Image 2026-04-15 at 7 52 11 PM" src="https://github.com/user-attachments/assets/41d9989c-450e-4621-a981-e3f1c3231e35" />
+<img width="1191" height="103" alt="WhatsApp Image 2026-04-15 at 7 52 44 PM" src="https://github.com/user-attachments/assets/b4448358-a40e-43e3-954d-0c4c4b37bfa5" />
+
+
 Launch containers with specific nice values to observe scheduling behavior:
 ```bash
 # High priority
@@ -75,6 +88,13 @@ sudo ./engine start priority-low ./rootfs-beta /cpu_workload --nice 19
 ```
 
 ### 6. Memory Hard-Limits
+<img width="1033" height="392" alt="WhatsApp Image 2026-04-15 at 7 52 58 PM" src="https://github.com/user-attachments/assets/4abb58a0-c5f6-47c1-a329-6a9dd1a8076d" />
+<img width="1217" height="289" alt="WhatsApp Image 2026-04-15 at 7 54 13 PM" src="https://github.com/user-attachments/assets/a16c0740-d09c-4b6c-abfe-c640fe898abe" />
+<img width="1536" height="1024" alt="WhatsApp Image 2026-04-15 at 8 38 59 PM (1)" src="https://github.com/user-attachments/assets/037507ce-fa9d-4d11-b356-e4be5914afcc" />
+
+<img width="1536" height="1024" alt="WhatsApp Image 2026-04-15 at 8 38 59 PM" src="https://github.com/user-attachments/assets/90f8c8cc-a7fc-41a9-8287-2a4d64e0469a" />
+
+
 Test memory limit enforcement using the kernel module:
 ```bash
 sudo ./engine start mem-test ./rootfs-alpha /mem_workload --hard-mib 10
