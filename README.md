@@ -90,7 +90,7 @@ sudo ./engine start priority-low ./rootfs-beta /cpu_workload --nice 19
 ### 6. Memory Hard-Limits
 <img width="1033" height="392" alt="WhatsApp Image 2026-04-15 at 7 52 58 PM" src="https://github.com/user-attachments/assets/4abb58a0-c5f6-47c1-a329-6a9dd1a8076d" />
 <img width="1217" height="289" alt="WhatsApp Image 2026-04-15 at 7 54 13 PM" src="https://github.com/user-attachments/assets/a16c0740-d09c-4b6c-abfe-c640fe898abe" />
-<img width="1051" height="334" alt="image" src="https://github.com/user-attachments/assets/44bf111c-b017-41b0-afc3-4d3d03b3b042" />
+
 <img width="1106" height="548" alt="image" src="https://github.com/user-attachments/assets/a369baf7-05f9-410e-8adb-32bb38a3f403" />
 
 
