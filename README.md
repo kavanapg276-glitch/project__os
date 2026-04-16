@@ -90,9 +90,9 @@ sudo ./engine start priority-low ./rootfs-beta /cpu_workload --nice 19
 ### 6. Memory Hard-Limits
 <img width="1033" height="392" alt="WhatsApp Image 2026-04-15 at 7 52 58 PM" src="https://github.com/user-attachments/assets/4abb58a0-c5f6-47c1-a329-6a9dd1a8076d" />
 <img width="1217" height="289" alt="WhatsApp Image 2026-04-15 at 7 54 13 PM" src="https://github.com/user-attachments/assets/a16c0740-d09c-4b6c-abfe-c640fe898abe" />
-<img width="1536" height="1024" alt="WhatsApp Image 2026-04-15 at 8 38 59 PM (1)" src="https://github.com/user-attachments/assets/037507ce-fa9d-4d11-b356-e4be5914afcc" />
+<img width="1051" height="334" alt="image" src="https://github.com/user-attachments/assets/44bf111c-b017-41b0-afc3-4d3d03b3b042" />
+<img width="1106" height="548" alt="image" src="https://github.com/user-attachments/assets/a369baf7-05f9-410e-8adb-32bb38a3f403" />
 
-<img width="1536" height="1024" alt="WhatsApp Image 2026-04-15 at 8 38 59 PM" src="https://github.com/user-attachments/assets/90f8c8cc-a7fc-41a9-8287-2a4d64e0469a" />
 
 
 Test memory limit enforcement using the kernel module:
